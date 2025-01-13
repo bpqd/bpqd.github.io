@@ -1,0 +1,9 @@
+body {
+    padding: 1%;
+    background: #FEFEFE;
+}
+table.border td, table.border th {
+    padding: 1%;
+    border: 1px solid #999;
+    background: #EEE;
+}
