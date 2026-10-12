@@ -41,9 +41,7 @@
 <p>В рамках долгосрочного планирования SEO должно рассматриваться не как изолированное направление, а как часть единой омниканальной стратегии интернет-маркетинга. Максимальный синергетический эффект достигается при одновременном использовании поисковой оптимизации, контекстной рекламы и контент-маркетинга в&nbsp;социальных сетях. Например, данные из рекламных кампаний помогают быстро протестировать конверсию новых ключевых слов до того, как запускать их в долгое SEO-продвижение, а качественные статьи из блога можно использовать для прогрева аудитории в email-рассылках. Такой комплексный подход не только диверсифицирует риски зависимости от&nbsp;изменений в&nbsp;одном источнике трафика, но и значительно повышает общую узнаваемость бренда в цифровой среде.</p>
 
 <h3>Официальная документация для SEO-специалиста: Старт в традиционном и AI-поиске</h3>
-
 <p>Для начинающего SEO-специалиста критически важно изучать <strong>официальные первоисточники</strong> от поисковых систем, а не сторонние блоги. Современное продвижение сайтов включает в себя не только работу с классическими алгоритмами, но и <strong>GEO/AEO (генеративную оптимизацию)</strong> — вывод сайтов в ответы искусственного интеллекта.</p>
-
 <h4>1. Поисковая система Google</h4>
 <ul>
   <li>
@@ -71,15 +69,49 @@
   </li>
 </ul>
 
-<h4>4. Нейросети и AI-поиск (GPT, Gemini, Perplexity)</h4>
+<h4>4. Нейросети и AI-поиск (GEO, AIO, LLM Crawlers)</h4>
 <ul>
   <li>
-    <strong><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google's Guide to AI Overviews</a></strong> — руководство по оптимизации сайтов под блоки искусственного интеллекта в выдаче Google Search. Показывает, как робот отбирает контент для генеративных ответов.
+    <strong><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google: AI Overviews & SGE Guidance</a></strong> 
+    — официальное руководство по оптимизации сайтов под генеративные ответы в поиске Google. Объясняет принципы ранжирования и извлечения данных для блоков искусственного интеллекта.
   </li>
   <li>
-    <strong><a href="https://openai.com" target="_blank" rel="noopener noreferrer">Документация OpenAI GPTBot</a></strong> — официальная техническая инструкция, описывающая принципы работы краулера ChatGPT. Позволяет понять, как разрешить или запретить ИИ сканировать ваш сайт для обучения моделей и формирования ответов.
+    <strong><a href="https://openai.com" target="_blank" rel="noopener noreferrer">OpenAI: GPTBot & OAI-SearchBot Documentation</a></strong> 
+    — техническая инструкция по управлению поисковым роботом ChatGPT и краулером для обучения моделей. Содержит директивы для robots.txt по разрешению или запрету индексации.
+  </li>
+  <li>
+    <strong><a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer">Perplexity: PerplexityBot User Agent</a></strong> 
+    — руководство по взаимодействию с краулером разговорной поисковой системы Perplexity. Показывает, как ИИ-поисковик собирает актуальные данные с веб-страниц в реальном времени.
+  </li>
+  <li>
+    <strong><a href="https://apple.com" target="_blank" rel="noopener noreferrer">Apple: Applebot-Extended Optimization</a></strong> 
+    — документация по управлению роботом Applebot. Позволяет веб-мастерам гибко контролировать использование их контента для обучения функций Apple Intelligence.
+  </li>
+  <li>
+    <strong><a href="https://bing.com" target="_blank" rel="noopener noreferrer">Microsoft: Bingbot & Copilot Webmaster Guidelines</a></strong> 
+    — правила индексации для поисковой системы Bing и ИИ-ассистента Copilot. Разъясняют, как структурировать контент для точного цитирования в чатах.
+  </li>
+  <li>
+    <strong><a href="https://anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic: ClaudeBot & User-Agents</a></strong> 
+    — спецификация поискового робота ClaudeBot, используемого компанией Anthropic. Помогает настроить лимиты сканирования и корректный доступ к закрытым структурам сайта.
   </li>
 </ul>
+
+<h5>Общие рекомендации по оптимизации под AI-поиск (Generative Engine Optimization)</h5>
+<ol>
+  <li>
+    <strong>Управление индексацией в robots.txt:</strong> Разделяйте директивы для классических поисковиков и ИИ-ассистентов. Используйте блокировку конкретных User-Agent (например, <code>OAI-SearchBot</code> или <code>Applebot-Extended</code>), если хотите защитить свой контент от ИИ, но остаться в стандартной выдаче.
+  </li>
+  <li>
+    <strong>Внедрение микроразметки (Schema.org):</strong> ИИ-модели опираются на структурированные данные. Наличие разметки <code>Product</code>, <code>FAQPage</code>, <code>Article</code> и <code>Organization</code> помогает алгоритмам безошибочно считывать факты, цены и взаимосвязи на странице.
+  </li>
+  <li>
+    <strong>Принцип прямого ответа (E-E-A-T):</strong> Формулируйте контент так, чтобы в начале страницы был четкий, экспертный и лаконичный ответ на потенциальный интент пользователя. LLM-краулеры забирают информацию блоками и ценят высокую плотность пользы без «воды».
+  </li>
+  <li>
+    <strong>Цитируемость и упоминания:</strong> Попадание в AI Overviews и Perplexity напрямую зависит от авторитетности бренда. Развивайте внешнее упоминание вашей компании (Brand Mention) на трастовых ресурсах, тематических форумах и в агрегаторах, так как ИИ компилирует ответы на базе сотен источников.
+  </li>
+</ol>
 	
 <h3 id="seo-workflow-samples">SEO workflow samples</h3>
 <p>Примеры рабочего процесса SEO специалиста в агентстве: <a href="/seo/seo_workflow_00000001.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;1</a>, <a href="/seo/seo_workflow_00000002.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;2</a>, <a href="/seo/seo_workflow_00000003.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;3</a>, <a href="/seo/seo_workflow_00000004.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;4</a>, <a href="/seo/seo_workflow_00000005.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;5</a>, <a href="/seo/seo_workflow_00000006.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;6</a>, <a href="/seo/seo_workflow_00000007.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;7</a>, <a href="/seo/seo_workflow_00000008.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;8</a>,<a href="/seo/seo_workflow_00000009.html" target="_blank">SEO&nbsp;workflow&nbsp;sample&nbsp;9</a></p>
