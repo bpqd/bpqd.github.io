@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /etc/blank.html
+Disallow: /_etc/blank.html
+Disallow: /_temp/temp.html
 
 Sitemap: https://bpqd.github.io/sitemap.xml
